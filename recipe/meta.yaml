@@ -1,5 +1,5 @@
 {% set name = "minikube" %}
-{% set version = "1.7.3" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/kubernetes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 93a1060a6f73fcd3a568880405569932a07b0e781dae34c006bc0259b082bc5d
+  sha256: 138c0cc310d4998fbe48237eebcf0364ae2c42ff80cafacf7cd839b4f844b1cc
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -29,7 +29,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Run Kubernetes locally'
+  summary: Run Kubernetes locally
   description: |
     minikube implements a local Kubernetes cluster.
     minikube's primary goals are to be the best tool for local Kubernetes
